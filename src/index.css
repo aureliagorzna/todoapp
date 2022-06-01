@@ -1,13 +1,81 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300');
+
+* {
+  font-family: Poppins;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  margin-top: 20vh;
+  min-width: 500px;
+  max-width: max-content;
+  box-shadow: 0 0 2px 2px black;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header button {
+  width: 70px;
+  background-color: limegreen;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  padding: 10px
+}
+
+.header input {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 1px 1px black;
+  height: 35px;
+  padding-left: 10px;
+  margin-left: 15%;
+}
+
+.tasks {
+  padding: 10px;
+}
+
+.tasks h2 {
+  margin-bottom: 20px;
+}
+
+.task {
+  background-color: lightgray;
+  border-radius: 10px;
+  padding: 6px;
+  font-size: 1.1rem;
+  min-width: 300px;
+  max-width: max-content;
+  margin-left: 10px;
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.clear {
+  border: none;
+  border-radius: 5px;
+  width: max-content;
+  padding: 5px;
+  background-color: rgb(255, 94, 118);
+  color: white;
+  font-size: 1.25rem;
 }
